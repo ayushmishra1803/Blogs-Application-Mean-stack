@@ -4,6 +4,7 @@ exports.getBlogs = (req, res, next) => {
     .getBlogs()
     .then(([rows, fields]) => {
       console.log(rows);
+
       const data = {
         status: 200,
         message: "Blogs Featched",
